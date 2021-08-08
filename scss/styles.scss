@@ -1,0 +1,432 @@
+$backGroundColor: red;
+$azulOscuro: #0f5f77;
+$celesteClarito: rgb(2, 219, 248);
+$celeste: #1392b8;
+$negro: black;
+$frMedida: 1fr;
+$degradeAzul: linear-gradient(to right, #0f5f77, rgb(2, 219, 248));
+$enable-gradients: black;
+$cartasColores: (
+  bronze: rgb(126, 82, 71),
+  silver: rgb(105, 102, 102),
+  gold: rgb(211, 208, 22),
+);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*ANULAR BOX-SIZING PREDETERMINADO DE BOOTSTRAP PARA HOME*/
+* {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+ul {
+  margin: 0;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+header {
+  background-image: $degradeAzul;
+}
+
+.footer {
+  font-weight: bold;
+  background-image: $degradeAzul;
+}
+
+.footer__ul {
+  display: grid;
+  grid-template-columns: $frMedida $frMedida $frMedida $frMedida $frMedida;
+  justify-items: center;
+  font-size: 20px;
+  list-style: none;
+  padding: 20px;
+}
+
+/* AJUSTE LOGO */
+.logito {
+  padding: 5px;
+  width: 150px;
+}
+
+/*TITULOS*/
+.titulo {
+  margin: 50px;
+  color: #1392b8;
+  font-weight: bold;
+  text-align: center;
+  font-size: 3em;
+  letter-spacing: 5px;
+  transition: all 2s;
+}
+
+.titulo__before::before {
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+  background-color: cyan;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* COLORES */
+.negroCol {
+  color: $negro;
+}
+
+/*LOGO REPCOM*/
+.nav__logo {
+  width: 90px;
+  height: 35px;
+  padding: 10px;
+}
+
+/*NAV CON GRID*/
+.nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  align-content: center;
+  display: grid;
+}
+
+.nav__ul {
+  display: grid;
+  grid-template-columns: $frMedida $frMedida $frMedida $frMedida $frMedida $frMedida $frMedida $frMedida;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+}
+
+.nav__a {
+  color: black;
+  display: block;
+  text-decoration: none;
+  justify-items: center;
+}
+
+.nav__a__hover:hover {
+  background: rgb(0, 0, 0);
+  color: #1392b8;
+}
+
+/* PARA SUBMIT */
+input[type="submit"] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #1392b8;
+}
+
+/* PARA RESET */
+input[type="reset"] {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="reset"]:hover {
+  background-color: #1392b8;
+}
+
+/*HOME CON GRID*/
+
+.grillaHome {
+  display: grid;
+  grid-template-columns: $frMedida;
+  grid-column-gap: 15px;
+}
+
+.subGrillaHome {
+  display: grid;
+  padding: 20px;
+  justify-items: center;
+  grid-template-columns: $frMedida $frMedida;
+  gap: 20px;
+}
+
+.grillaCarta {
+  display: grid;
+  grid-template-columns: $frMedida $frMedida $frMedida;
+  gap: 50px;
+  margin: 50px;
+  justify-items: center;
+  padding-bottom: 50px;
+}
+
+.grillaGps {
+  display: grid;
+  margin: 50px;
+  justify-items: center;
+  grid-template-columns: $frMedida $frMedida $frMedida $frMedida;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+}
+
+.grillaQuien {
+  display: grid;
+  grid-template-columns: $frMedida;
+  gap: 50px;
+  justify-items: center;
+  margin: 0 600px 0 600px;
+  padding-bottom: 50px;
+}
+
+.grillaMapa {
+  margin: 0 500px 0 500px;
+  justify-items: center;
+  padding-bottom: 40px;
+}
+
+.tarjeta {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: $frMedida;
+  justify-items: center;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta__hover:hover {
+  border-color: $azulOscuro;
+  box-shadow: 0px 2px 7px 5px $azulOscuro;
+}
+
+.tarjeta__boton {
+  margin: 20px 0 20px 0;
+}
+
+.tarjeta__fotosNosotros {
+  width: 500px;
+  height: 500px;
+  margin: 30px;
+}
+
+//CICLOS OPERACIONES ECT
+
+@each $modelo, $color in $cartasColores {
+  .cartaColor--#{$modelo} {
+    color: $color;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    -webkit-text-stroke: 2px black;
+  }
+}
+
+@each $modelo, $color in $cartasColores {
+  .tarjeta__#{$modelo}__hover:hover {
+    border-color: black;
+    box-shadow: 0px 2px 7px 5px $color;
+  }
+}
+
+@for $i from 1 through 3 {
+  #colorsito--#{$i} {
+    @if $i == 1 {
+      background-color: rgb(126, 82, 71);
+    } @else if $i == 2 {
+      background-color: rgb(105, 102, 102);
+    } @else if $i == 3 {
+      background-color: rgb(211, 208, 22);
+    }
+  }
+}
+
+.carousel-control-prev:hover {
+  left: 0;
+  @if $enable-gradients {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 225, 255, 0),
+      rgb(0, 99, 138)
+    );
+  }
+}
+
+.carousel-control-next:hover {
+  right: 0;
+  @if $enable-gradients {
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 225, 255, 0),
+      rgb(0, 99, 138)
+    );
+  }
+}
+
+//CAMBIO DE COLOR FLECHITAS DE CARROUSELL
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+  width: 15%;
+  height: 15%;
+}
+
+@each $foto in barco, pescador, carta {
+  .#{$foto}--icon {
+    background-image: url(../imagenes/#{$foto}.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+  }
+}
+
+///////////////////////////////////////////////
+
+.tarjeta404 {
+  display: grid;
+  padding: 30px;
+  margin: 200px 500px 0 500px;
+  grid-template-columns: $frMedida;
+  justify-items: center;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.tarjeta__404__hover:hover {
+  border-color: black;
+  box-shadow: 0px 2px 7px 5px black;
+}
+
+.fonditoError {
+  background-color: rgb(100, 16, 16);
+}
+
+////////////////////////////////////////////////////////
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+
+  .subGrillaHome {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .grillaGps {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .grillaCarta {
+    grid-template-columns: $frMedida;
+    gap: 50px;
+    margin: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer__ul {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .nav__ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+  }
+
+  .nav__a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .nav__logo {
+    width: 100px;
+    height: 80px;
+  }
+
+  @each $foto in barco, pescador, carta {
+    .#{$foto}--icon {
+      background-image: url(../imagenes/#{$foto}.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 50vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  body {
+    font-size: 13px;
+  }
+
+  .subGrillaHome {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .grillaGps {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .grillaCarta {
+    grid-template-columns: $frMedida;
+    gap: 50px;
+    margin: 50px;
+    padding-bottom: 50px;
+  }
+
+  .footer__ul {
+    font-size: 10px;
+    font-weight: bold;
+  }
+  .nav {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .nav__ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+  }
+
+  .nav__a {
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav__logo {
+    width: 100px;
+    height: 80px;
+  }
+
+  .portadaLetras {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    -webkit-text-stroke: 1px rgb(0, 183, 255);
+    color: black;
+    font-weight: bold;
+  }
+}
