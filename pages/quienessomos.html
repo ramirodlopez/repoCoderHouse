@@ -14,6 +14,7 @@
     />
     <title>REPCOM | Quienes Somos</title>
     <link rel="shortcut icon" href="../imagenes/logito.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
@@ -67,11 +68,17 @@
           </ul>
         </nav>
       </header>
-      <h1 class="titulo titulo__before">QUIENES SOMOS</h1>
+      <h1 data-aos="zoom-out" data-aos-duration="1500" class="titulo">
+        QUIENES SOMOS
+      </h1>
       <section>
         <div class="grillaQuien">
-          <div class="tarjeta tarjeta__hover">
-            <p>
+          <div
+            data-aos="zoom-out"
+            data-aos-duration="1500"
+            class="tarjeta tarjeta__hover"
+          >
+            <p data-aos="fade-up" data-aos-delay="300">
               <b
                 >Somos una empresa familiar con mas de 20 años en el rubro,
                 diseñando cartografias nauticas para empresas como Garmin,
@@ -85,8 +92,15 @@
                 lograr un nombre tan prestigiado.</b
               >
             </p>
-            <img class="tarjeta__fotosNosotros" src="../imagenes/papayp.jpg" />
-            <p>Foto: Relevando la batimetria con equipo GARMIN</p>
+            <img
+              data-aos="fade-up"
+              data-aos-delay="400"
+              class="tarjeta__fotosNosotros"
+              src="../imagenes/papayp.jpg"
+            />
+            <p data-aos="fade-up" data-aos-delay="400">
+              Foto: Relevando la batimetria con equipo GARMIN
+            </p>
           </div>
         </div>
       </section>
@@ -100,5 +114,9 @@
         </ul>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

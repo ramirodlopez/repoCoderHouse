@@ -14,6 +14,7 @@
     />
     <title>REPCOM | Cartografias</title>
     <link rel="shortcut icon" href="../imagenes/logito.png" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
@@ -67,10 +68,17 @@
           </ul>
         </nav>
       </header>
-      <h1 class="titulo titulo__before">CARTOGRAFIAS</h1>
+      <h1 data-aos="zoom-out" data-aos-duration="1500" class="titulo">
+        CARTOGRAFIAS
+      </h1>
       <section>
         <div class="grillaCarta">
-          <div id="colorsito--1" class="tarjeta tarjeta__bronze__hover">
+          <div
+            data-aos="slide-right"
+            data-aos-duration="1000"
+            id="colorsito--1"
+            class="tarjeta tarjeta__bronze__hover"
+          >
             <h2 class="cartaColor--bronze">BRONZE</h2>
             <img src="../imagenes/bronzeCarta.jpg" alt="carta bronze" />
             <h3>
@@ -94,7 +102,12 @@
             </p>
             <input class="tarjeta__boton" type="submit" value="US$ 499,99" />
           </div>
-          <div id="colorsito--2" class="tarjeta tarjeta__silver__hover">
+          <div
+            data-aos="zoom-up"
+            data-aos-duration="1500"
+            id="colorsito--2"
+            class="tarjeta tarjeta__silver__hover"
+          >
             <h2 class="cartaColor--silver">SILVER</h2>
             <img src="../imagenes/silverCarta.jpg" alt="carta silver" />
             <h3>Abarca: South America, East Coast Charts | Detalles: 80%</h3>
@@ -116,7 +129,12 @@
             </p>
             <input class="tarjeta__boton" type="submit" value="US$ 699,99" />
           </div>
-          <div id="colorsito--3" class="tarjeta tarjeta__gold__hover">
+          <div
+            data-aos="slide-left"
+            data-aos-duration="1000"
+            id="colorsito--3"
+            class="tarjeta tarjeta__gold__hover"
+          >
             <h2 class="cartaColor--gold">GOLD</h2>
             <img src="../imagenes/goldCarta.jpg" alt="carta gold" />
             <h3>Abarca: South America Coastal Charts | Detalles: 100%</h3>
@@ -150,5 +168,9 @@
         </ul>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
