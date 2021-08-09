@@ -26,6 +26,7 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -142,24 +143,26 @@
         </div>
       </section>
       <section class="subGrillaHome">
-        <div class="tarjeta tarjeta__hover">
-          <h2 style="text-align: center">NAVEGA SEGURO CON REPCOM</h2>
-          <img src="./imagenes/secUno1.jpg" alt="cartas" />
-          <p>
-            Carta Náutica es la referencia cartográfica <b>esencial</b> para los
-            navegantes de todo el mundo. Si buscas un mapa <b>preciso</b> y
-            <b>exhaustivo</b> de mares y lagos, Carta Náutica es el recurso con
-            el que querrás contar. ¡Utiliza el mapa para analizar planos de
-            puertos y líneas de profundidad de <b>seguridad</b>, identificar
-            mareas y corrientes, localizar ayudas a la navegación, servicios
-            náuticos cercanos y mucho más!
-          </p>
-          <a href="./pages/cartografias.html"
-            ><input
-              class="tarjeta__boton"
-              type="submit"
-              value="Mas informacion"
-          /></a>
+        <div data-aos="fade-up-left">
+          <div class="tarjeta tarjeta__hover">
+            <h2 style="text-align: center">NAVEGA SEGURO CON REPCOM</h2>
+            <img src="./imagenes/secUno1.jpg" alt="cartas" />
+            <p>
+              Carta Náutica es la referencia cartográfica <b>esencial</b> para
+              los navegantes de todo el mundo. Si buscas un mapa
+              <b>preciso</b> y <b>exhaustivo</b> de mares y lagos, Carta Náutica
+              es el recurso con el que querrás contar. ¡Utiliza el mapa para
+              analizar planos de puertos y líneas de profundidad de
+              <b>seguridad</b>, identificar mareas y corrientes, localizar
+              ayudas a la navegación, servicios náuticos cercanos y mucho más!
+            </p>
+            <a href="./pages/cartografias.html"
+              ><input
+                class="tarjeta__boton"
+                type="submit"
+                value="Mas informacion"
+            /></a>
+          </div>
         </div>
         <div class="tarjeta tarjeta__hover">
           <h2 style="text-align: center">LOS MEJORES PLOTTERS</h2>
@@ -201,5 +204,9 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
