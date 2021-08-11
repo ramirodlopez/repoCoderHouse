@@ -135,6 +135,14 @@ input[type="reset"]:hover {
   margin: 0 600px 0 600px;
   padding-bottom: 50px; }
 
+.grillaContacto {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 50px;
+  margin: 50px;
+  justify-items: center;
+  padding-bottom: 50px; }
+
 .grillaMapa {
   margin: 0 500px 0 500px;
   justify-items: center;
@@ -270,6 +278,17 @@ input[type="reset"]:hover {
     gap: 50px;
     margin: 50px;
     padding-bottom: 50px; }
+  .grillaQuien {
+    margin: 30px;
+    padding-bottom: 50px; }
+  .grillaMapa {
+    margin: 10px;
+    justify-items: center;
+    padding-bottom: 40px; }
+  .tarjeta__fotosNosotros {
+    width: 300px;
+    height: 300px;
+    margin: 30px; }
   .footer__ul {
     font-size: 10px;
     font-weight: bold; }
@@ -309,6 +328,17 @@ input[type="reset"]:hover {
     gap: 50px;
     margin: 50px;
     padding-bottom: 50px; }
+  .grillaQuien {
+    margin: 30px;
+    padding-bottom: 50px; }
+  .grillaMapa {
+    margin: 10px;
+    justify-items: center;
+    padding-bottom: 40px; }
+  .tarjeta__fotosNosotros {
+    width: 300px;
+    height: 300px;
+    margin: 30px; }
   #nav {
     display: flex;
     flex-direction: column;
