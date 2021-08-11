@@ -28,6 +28,12 @@ header {
   font-weight: bold;
   background-image: linear-gradient(to right, #0f5f77, #02dbf8); }
 
+.colNav {
+  background-color: linear-gradient(to right, #0f5f77, #02dbf8); }
+
+.mayus {
+  text-transform: uppercase; }
+
 .footer__ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;

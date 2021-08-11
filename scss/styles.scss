@@ -48,6 +48,14 @@ header {
   background-image: $degradeAzul;
 }
 
+.colNav {
+  background-color: $degradeAzul;
+}
+
+.mayus {
+  text-transform: uppercase;
+}
+
 .footer__ul {
   display: grid;
   grid-template-columns: $frMedida $frMedida $frMedida $frMedida $frMedida;
