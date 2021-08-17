@@ -281,9 +281,7 @@ input[type="reset"]:hover {
     row-gap: 20px; }
   .grillaCarta {
     grid-template-columns: 1fr;
-    gap: 50px;
-    margin: 50px;
-    padding-bottom: 50px; }
+    margin: 20px; }
   .grillaQuien {
     margin: 30px;
     padding-bottom: 50px; }
@@ -331,9 +329,7 @@ input[type="reset"]:hover {
     row-gap: 20px; }
   .grillaCarta {
     grid-template-columns: 1fr;
-    gap: 50px;
-    margin: 50px;
-    padding-bottom: 50px; }
+    margin: 20px; }
   .grillaQuien {
     margin: 30px;
     padding-bottom: 50px; }
