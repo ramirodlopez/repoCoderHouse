@@ -165,6 +165,17 @@ input[type="reset"]:hover {
   box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden; }
 
+.tarjetaGps {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden; }
+
 .tarjeta__hover:hover {
   border-color: #0f5f77;
   box-shadow: 0px 2px 7px 5px #0f5f77; }
@@ -281,10 +292,10 @@ input[type="reset"]:hover {
     row-gap: 20px; }
   .grillaCarta {
     grid-template-columns: 1fr;
-    margin: 20px; }
+    margin: auto; }
   .grillaQuien {
-    margin: 30px;
-    padding-bottom: 50px; }
+    grid-template-columns: 1fr;
+    margin: auto; }
   .grillaMapa {
     margin: 10px;
     justify-items: center;
@@ -293,6 +304,8 @@ input[type="reset"]:hover {
     width: 300px;
     height: 300px;
     margin: 30px; }
+  .tarjeta {
+    width: 80%; }
   .footer__ul {
     font-size: 10px;
     font-weight: bold; }
@@ -331,16 +344,18 @@ input[type="reset"]:hover {
     grid-template-columns: 1fr;
     margin: 20px; }
   .grillaQuien {
-    margin: 30px;
+    grid-template-columns: 1fr;
+    margin: auto;
     padding-bottom: 50px; }
   .grillaMapa {
-    margin: 10px;
-    justify-items: center;
+    margin: 20px;
     padding-bottom: 40px; }
   .tarjeta__fotosNosotros {
     width: 300px;
     height: 300px;
-    margin: 30px; }
+    margin: 0px; }
+  .titulo {
+    font-size: 170%; }
   #nav {
     display: flex;
     flex-direction: column;
