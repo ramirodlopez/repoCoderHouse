@@ -330,7 +330,7 @@ input[type="reset"]:hover {
 
 ////////////////////////////////////////////////////////
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 320px) {
   body {
     font-size: 10px;
   }
@@ -368,7 +368,7 @@ input[type="reset"]:hover {
   }
 
   .tarjeta {
-    width: 80%;
+    width: auto;
   }
 
   .footer__ul {
@@ -391,7 +391,73 @@ input[type="reset"]:hover {
       background-image: url(../imagenes/#{$foto}.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      height: 10vh;
+      height: 25vh;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 10px;
+  }
+
+  .subGrillaHome {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .grillaGps {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .grillaCarta {
+    grid-template-columns: $frMedida;
+    margin: auto;
+  }
+
+  .grillaQuien {
+    grid-template-columns: $frMedida;
+    margin: auto;
+  }
+
+  .grillaMapa {
+    margin: 10px;
+    justify-items: center;
+    padding-bottom: 40px;
+  }
+
+  .tarjeta__fotosNosotros {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+  }
+
+  .tarjeta {
+    width: auto;
+  }
+
+  .footer__ul {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  #nav {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .nav__logo {
+    margin-left: 0px;
+  }
+
+  @each $foto in barco, pescador, carta {
+    .#{$foto}--icon {
+      background-image: url(../imagenes/#{$foto}.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 25vh;
     }
   }
 }
@@ -457,5 +523,14 @@ input[type="reset"]:hover {
     -webkit-text-stroke: 1px rgb(0, 183, 255);
     color: black;
     font-weight: bold;
+  }
+
+  @each $foto in barco, pescador, carta {
+    .#{$foto}--icon {
+      background-image: url(../imagenes/#{$foto}.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 25vh;
+    }
   }
 }
