@@ -207,6 +207,18 @@ input[type="reset"]:hover {
   overflow: hidden;
 }
 
+.tarjeta2 {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: $frMedida;
+  justify-items: center;
+  border: 1px solid;
+  border-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  box-shadow: 0px 2px 7px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
 .tarjetaGps {
   display: grid;
   padding: 20px;
@@ -371,6 +383,10 @@ input[type="reset"]:hover {
     width: auto;
   }
 
+  .tarjeta2 {
+    width: 80%;
+  }
+
   .footer__ul {
     font-size: 10px;
     font-weight: bold;
@@ -436,6 +452,10 @@ input[type="reset"]:hover {
 
   .tarjeta {
     width: auto;
+  }
+
+  .tarjeta2 {
+    width: 80%;
   }
 
   .footer__ul {
