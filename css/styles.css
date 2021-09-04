@@ -319,17 +319,17 @@ input[type="reset"]:hover {
     background-image: url(../imagenes/barco.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh; }
+    height: 10vh; }
   .pescador--icon {
     background-image: url(../imagenes/pescador.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh; }
+    height: 10vh; }
   .carta--icon {
     background-image: url(../imagenes/carta.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 50vh; } }
+    height: 10vh; } }
 
 @media only screen and (max-width: 992px) {
   body {
